@@ -1,4 +1,63 @@
 @import "tailwindcss";
-@plugin "daisyui" {
-    themes: bumblebee --default, emerald --prefersdark, cupcake;
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+@plugin "daisyui";
+@plugin "daisyui/theme" {
+    name: "myTheme";
+    default: true; /* set as default */
+    prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+    color-scheme: light; /* color of browser-provided UI */
+
+    --color-base-100: oklch(0.981 0.034 99.828);
+    --color-base-200: oklch(0.909 0.032 101.176);
+    --color-base-300: oklch(0.833 0.029 100.334);
+    --color-base-content: oklch(0.316 0.009 97.613);
+    --color-primary: oklch(0.856 0.053 118.089);
+    --color-primary-content: oklch(0.316 0.016 117.487);
+    --color-secondary: oklch(0.934 0.047 112.468);
+    --color-secondary-content: oklch(98% 0.01 200);
+    --color-accent: oklch(0.75 0.086 65.298);
+    --color-accent-content: oklch(0.443 0.048 64.869);
+    --color-neutral: oklch(0.948 0.044 88.529);
+    --color-neutral-content: oklch(0.31 0.011 84.589);
+    --color-info: oklch(0.865 0.115 207.078);
+    --color-info-content: oklch(0.167 0.029 211.6);
+    --color-success: oklch(0.897 0.179 126.665);
+    --color-success-content: oklch(0.156 0.036 127.641);
+    --color-warning: oklch(0.879 0.153 91.605);
+    --color-warning-content: oklch(0.17 0.035 86.188);
+    --color-error: oklch(0.81 0.106 11.638);
+    --color-error-content: oklch(0.151 0.03 12.006);
+    --text-accent: oklch(0.443 0.048 64.869);
+
+    /* border radius */
+    --radius-selector: 1rem;
+    --radius-field: 0.5rem;
+    --radius-box: 0.5rem;
+
+    /* base sizes */
+    --size-selector: 0.25rem;
+    --size-field: 0.25rem;
+
+    /* border size */
+    --border: 1px;
+
+    /* effects */
+    --depth: 1;
+    --noise: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    @apply bg-base-100 text-accent;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    @apply text-5xl font-bold text-accent-content;
+    font-family: 'Azeret Mono';
 }
