@@ -2,10 +2,12 @@
     import { onMount, untrack } from "svelte";
     import GPSample from "./GPSample.svelte";
 
-    let { nSamples, resolution, variance, width, height, points = [] }: {
+    let { nSamples, resolution, variance, width, height, points = [], vertical = false, showPoints = true }: {
         nSamples: number; resolution: number; variance: number;
         width: number; height: number;
-        points?: { x: number; y: number }[];
+        points?: { x: number; y: number }[];  // x: px along the input axis, y: value
+        vertical?: boolean;
+        showPoints?: boolean;  // draw the observed points, or leave markers to the caller
     } = $props();
 
     const NOISE_INIT = 100;
@@ -66,16 +68,14 @@
 </script>
 
 <svg width="100%" height="100%">
-    <!-- Dashed line at y == 0 -->
-    <line x1="0" y1="50%" x2="100%" y2="50%"
-          stroke="currentColor" stroke-dasharray="8 4" stroke-width="1" opacity="0.4"/>
     {#each sampleParams as params, i}
         <GPSample bind:this={gpSamples[i]} {width} {height}
                   length_scale={params.length_scale} {variance} {resolution}
-                  frames={params.frames} startFrame={params.startFrame} points={displayedPoints}/>
+                  frames={params.frames} startFrame={params.startFrame} points={displayedPoints} {vertical}/>
     {/each}
-    {#each displayedPoints as p}
-        <circle cx={p.x} cy={height / 2 - p.y * height / 10} r="6"
+    {#each showPoints ? displayedPoints : [] as p}
+        <circle cx={vertical ? width / 2 + p.y * width / 10 : p.x}
+                cy={vertical ? p.x : height / 2 - p.y * height / 10} r="6"
                 class="fill-primary" stroke="white" stroke-width="2"
                 opacity={Math.max(0, Math.min(1, (Math.log(NOISE_INIT) - Math.log(p.noise)) / logRange))}/>
     {/each}
