@@ -1,0 +1,90 @@
+[
+  {
+    "file": "BeNeLearn_26/BeNeLearn_26_SLejoly.html",
+    "slug": "BeNeLearn_26",
+    "thumbnail": "BeNeLearn_26/BeNeLearn_26_SLejoly.thumb.webp",
+    "status": "included",
+    "kind": "Poster",
+    "title": "Examples of use of MIMOSA, a probabilistic framework for functional data analysis",
+    "venue": "BeNeLearn 2026",
+    "date": "2026-10",
+    "description": "",
+    "pdf": "BeNeLearn_26/BeNeLearn_26_SLejoly.pdf"
+  },
+  {
+    "file": "EPMLSS_26/EPMLSS_26_SLejoly.html",
+    "slug": "EPMLSS_26",
+    "thumbnail": "EPMLSS_26/EPMLSS_26_SLejoly.thumb.webp",
+    "preview": "EPMLSS_26/EPMLSS_26_SLejoly.preview.mp4",
+    "slide": 1,
+    "status": "featured",
+    "kind": "Talk",
+    "title": "Bayesian Machine Learning at scale for functional data analysis",
+    "venue": "Europlanet Machine Learning Summer School",
+    "date": "",
+    "description": ""
+  },
+  {
+    "file": "EPSC_24/EPSC_24_SLejoly.html",
+    "slug": "EPSC_24",
+    "thumbnail": "EPSC_24/EPSC_24_SLejoly.thumb.webp",
+    "preview": "EPSC_24/EPSC_24_SLejoly.preview.mp4",
+    "slide": 1,
+    "status": "included",
+    "kind": "Talk",
+    "title": "MAGMA Gaussian Processes to complete Venusian atmospheric profiles from SOIR",
+    "venue": "Europlanet Science Congress",
+    "date": "",
+    "description": ""
+  },
+  {
+    "file": "EPSC_26/EPSC_26_SLejoly.html",
+    "slug": "EPSC_26",
+    "thumbnail": "EPSC_26/EPSC_26_SLejoly.thumb.webp",
+    "preview": "EPSC_26/EPSC_26_SLejoly.preview.mp4",
+    "slide": 1,
+    "status": "featured",
+    "kind": "Talk",
+    "title": "Probabilistic detection of outliers in Venusian atmospheric profiles from VEx/SOIR",
+    "venue": "Europlanet Science Congress",
+    "date": "",
+    "description": ""
+  },
+  {
+    "file": "ESANN_24/Poster_ESANN_2024.pdf",
+    "slug": "ESANN_24",
+    "thumbnail": "ESANN_24/Poster_ESANN_2024.thumb.webp",
+    "status": "included",
+    "kind": "Poster",
+    "title": "Extrapolating Venusian atmospheric profiles using MAGMA Gaussian Processes",
+    "venue": "ESANN",
+    "date": "",
+    "description": ""
+  },
+  {
+    "file": "UAntwerp_25_SLejoly/UAntwerp_26_SLejoly.html",
+    "slug": "UAntwerp_25_SLejoly",
+    "thumbnail": "UAntwerp_25_SLejoly/UAntwerp_26_SLejoly.thumb.webp",
+    "preview": "UAntwerp_25_SLejoly/UAntwerp_26_SLejoly.preview.mp4",
+    "slide": 1,
+    "status": "featured",
+    "kind": "Talk",
+    "title": "Multi-Task Gaussian Processes Applied to Spatial Aeronomy Data",
+    "venue": "University of Antwerp",
+    "date": "",
+    "description": ""
+  },
+  {
+    "file": "UNamurDL_25_SLejoly/UNamurDL_25_SLejoly.html",
+    "slug": "UNamurDL_25_SLejoly",
+    "thumbnail": "UNamurDL_25_SLejoly/UNamurDL_25_SLejoly.thumb.webp",
+    "preview": "UNamurDL_25_SLejoly/UNamurDL_25_SLejoly.preview.mp4",
+    "slide": 1,
+    "status": "included",
+    "kind": "Talk",
+    "title": "Les modèles probabilistes pour l'analyse, la prédiction et le clustering de données atmosphériques",
+    "venue": "UNamur — Advanced Deep Learning course",
+    "date": "",
+    "description": ""
+  }
+]

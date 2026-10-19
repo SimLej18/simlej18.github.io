@@ -1,16 +1,14 @@
 <script lang="ts">
+    import { contactLinks } from "$lib/contact-links";
+
     let { sections, onNavigate }: {
         sections: { label: string }[];
         onNavigate: (index: number) => void;
     } = $props();
 
-    // TODO: real links
     const external = [
         { label: "One-page resume", href: "/resume" },
-        { label: "GitHub", href: "#top" },
-        { label: "LinkedIn", href: "#top" },
-        { label: "Scholar", href: "#top" },
-        { label: "Email", href: "#top" },
+        ...contactLinks,
     ];
 </script>
 

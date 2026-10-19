@@ -1,0 +1,2012 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Manim Slides</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/theme/black.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/highlight/zenburn.css">
+    <!-- <link rel="stylesheet" href="index.css"> -->
+  </head>
+
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s0_f9d9744624ac04a0d429031e8c3e8269fab018f921a199956b406d34fcc60a85.mp4"
+          data-background-video-muted
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_86035dd3a91ea97c91db1b47c088d8ab4a8b8e4957d5b73acbf5f97b5ac4e22d.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_872f832a54dfa8547c68c9278cc3628b4f2622c904673c587748c5ccfa242d60.mp4"
+          >
+            <aside class="notes" data-markdown># One observation
+* A dot is a measurement: an input and an output, each with its unit.
+* Same dot, different domains: age/height, time/power, altitude/temperature.
+* A second measurement, later in the input.
+* Drop the units: the whole task is a set of such pairs.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_8fdae4f03b9dba74e3ea1c085da51e7342bcaf2b41c0b6ee8c94f44cf9227c76.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_2fd4f9dc5b517e0ba6a31c4f1cb835b0fbddd42018ad38f20d3b055e30ec4a7e.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_166795b9fe300ba688c121028fa574170efb174a0d60b97615607a29678ff29f.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_e5d8d290f469076be629c803c376532984299002e8c1430eefd569d89027c6ef.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_5826b56df4b6f106646ba9b7df2df533be0ac6a8948ab90fa4e81054c6d2ce74.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_b02d4d8d57616deb0d919be50dfc308e729c2dce7f456455b0e17402273db067.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_4ad18eaaab6b790f0d0792a9044a51bf7a42f07def97a01bba0300493323e8af.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_7f651e7fdf93821fe02667132c85904ea19a1d80f0605e1d605d29834cf6fbe2.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_d71cf98920605afe55be8fb7e60e5d8a775245e23b9cfbbc03f90d8100163b02.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_37e30e403fb6736a991a0661d52440bebbf2a4875724264149a3c241da33465d.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_72055723f02af84aea13dfec44d42afcf756641eda43d42ef2bab143b789fa11.mp4"
+          >
+            <aside class="notes" data-markdown># Several outputs per task
+* A new dataset: same tasks, two quantities measured on each.
+* The second output is costly, so it is observed sparsely -- and stops two thirds of the way through the domain.
+* Two wishes: interpolate the expensive output, and use its relation to the cheap one to forecast where it was never measured.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_f85da9f39eea6faa7a04c921a44f6f0bb5bf776bc993386b1646b117eaf43522.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_d90c59307168201b34af4dd5dff4ae881be9cddfb577ff5527fa8aea6c5e0a2c.mp4"
+          >
+            <aside class="notes" data-markdown># Recovering a terrain from passes
+* Each pass is one task: a line of noisy, biased observations across the map.
+* No pass sees the whole terrain, yet together they recover the average topography.
+* The posterior variance says where to send the next pass.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_3f78b2f54bd2bab2f87030eeb37d91b2b0d0954f8d017b6d6f7d04a71cbd3d17.mp4"
+          >
+            <aside class="notes" data-markdown># Who am I?
+* Me, then the people this work is shared with, left to right.
+* Namur, BIRA-IASB, Paris-Saclay, Toulouse, INRAe.
+* MagmaClustR came first; MIMOSA is where it went.
+* What MIMOSA buys you, in five lines.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_685c063526097e5b810c113504546a5cea94bbbf797e1f1397e1e2d7e252b742.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_2f327e89034ff492c4036d4376e6cf78c68c4276667a697fba44ce10bc23e716.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_c6952a0e90ce18e6e3236df483a92f183e82f46dd890885fc2ef25e90697be27.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_18c0cd02a66a21fd4aacee219e1f07100f7f655af86540b780fff4263bafc377.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_fde17fe3f1609361fb4fe7edc0e36d960c8664982c2a35182e0546cc29c71f4b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_99f3ce439c11963de397b45c911191fb348eb13d83c34263115750e84bb21e73.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_c691514a9f2b50452e0dc57e2ab83cc3f7cae8381d81100bfea68d343af0d55e.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_9bde1fdeba31f466f473ab047c71a5321b90df10e8cf8fa43191c4ab371dc9ac.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s1_1d66ef19afb1ed906a0a163e5862e2adf786ce20e597b6e68e3b90c57cdb5ad5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_d144319858fdd6019532cdb03b91f8c4bb2e2f4bf64248352ac5779926194676.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_60398190159dae114bbd9538202742bce54046a385c086c74dbc832dea7d41e8.mp4"
+          >
+            <aside class="notes" data-markdown># Machine learning as a whole
+* Everything here rests on inductive reasoning.
+* From particular observations to general rules, keeping the most probable ones.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_afcc1674cc280fc53521a0470d1965144e913e99dc2fe6a80033f072adcea0df.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_4a274f45d08dca653547e68db8e424d0993768a5fa4de43c3c2eb080019af41e.mp4"
+          >
+            <aside class="notes" data-markdown># Hypothesis space, learning and uncertainty
+* F is every function from inputs to outputs; f* is the one that generated the data.
+* A model assumption carves out H, the predictors we can actually reach.
+* Learning walks h_0 to the fitted h-hat; h* is the best H has to offer.
+* Each hop is a source of error. Optimisation aside, they add up to what we observe.
+* Iris petals: a spherical mixture stalls in a local optimum, two components on setosa.
+* A luckier run reaches h*; only a richer covariance moves h* closer to f*.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_341c8c363cce33500a345dc8aa05eb9e9434f54c1554dc427389ca1f53b9d55c.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_7ccc1ea8bf59b1a5f66d0041776a175ca25be0c3af726127ae3d469c769f1028.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_fead0e91bafb351571f2983c156b6ab905e82f6c317db89a4200f4ac5d2a32ee.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_64b337a3ab8091705c628377629af8fe4c9b6f33725facb25e5824948a2afbc1.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_d8ccc06435a1f1bc1ddcad9467ee6ef10fb0c00ada1d57b777b713bf76eae561.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_563c21c63a1224606d74f3d53a1d49cde484aa31f2029a398a0e6850fe38c986.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_bcdea12c47488ea385e841e67443fd355ec6b2acae9aeaedddf53503e8c12036.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_abf5e633c1ac695883b5754326c4515722a96e910662a838d26c2a24bf378dbe.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_f1881dee37823182088ebbc5ec746d8a3d73cd8267a4c7e26c39cc0fbed8b2fe.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_3a8016d52320f3317ebfe5e7658acc04635e997cc34d268ecc02f2fd0d86ba9a.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_6b67842f5e82c46fa6b05d1c000fc5ecaae9f6a1bdab1bd96072eaf5cbf483ed.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_4f431072027495845dc26a78839e177a95f359412f3f41dab4ba7d9a696631ae.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_82fd496dd7049eb4558537842ffe06073a70d3a4d9aa0a68380a12d802d1d0be.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_3e0ef3a372e1db320dcd3b960398a609da8e8ff43dc797022e3553d40a5b1160.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_d4010d7389e326a8321c546bd26cd0346bef4b8344ef7b39af32a5c17e08d167.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_52870846ab8399dee109840d766659902b7e84bfe69b9e0ee02a00579de0ff90.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_bdb8e5b384a9af56f1f244af2535cea5fc065c4f19e2fd6a895a5ffbeb2b8711.mp4"
+          >
+            <aside class="notes" data-markdown># The Bayes rule
+* Parameters theta, dataset D.
+* Posterior, likelihood, prior, evidence.
+* The evidence is a constant in theta: drop it, keep a proportionality.
+* Left: no prior, parameters are fixed values pinned down by enough data.
+* Right: a prior over the parameters, updated point by point into a posterior.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_b435075e13d2716f5412d730156f645540349a87779b78702ca455de02ac7613.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_18a4dce91b910554051df22d1809d223bd57e5017f64604b33abbe8f98c19ae8.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_da7cfcdb2f4f48abdf7129d79183e247b6fe8df75600fa4df1a9595cdc3db9a7.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_79888fd170a2c3a2f48808b93d878e54691843c588e1d2e1a74e29cbc54e51b6.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_55b22e11fa133deb5259da6d647eb97d671dffab3605d55c45dde09c9e4e6359.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_9a665071b03c969dd3a9156502df82eaa72333139fd790a090a421345863c858.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_7b19ccce2dbd643d92631a5c975a4d32d5f1ed3e6f028268de0845c0e6a43f58.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_541695bf6d1b0689fe1dbb3d74278b81ae8b829f7c74bd8daf3e9c3772f6deab.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_a001f83cfe30fc08be11d19671f29b7b259dbb35b243ba279ec9683285b7889d.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_2adf3ea5d47efaa40f1a4ba8d5eaf110ddcc82e5700c8297745567419c188c89.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_6c06870e3175da957b483b8b72f29e68684312dfc663c3cee1ac1559f56d5529.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_1506444689b913d74767241d95cea64fa1788896392e19dc0342bb06c9bcef4a.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_59dca8972312e2c380e1f9c302c00d72a345d1ed34d9368ecea5b47c9f52eb7b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_8293cd9c876be716873b358459a7cd7a1da61a1feda358bde50a053495764837.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_577582fb61450a466f434a7432d86a48415da05248edebdd2efcc3632b31e7ea.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_a73d828485c95370f80febc558de10cf1a6a6a10a27dee9a91ed8be38688010a.mp4"
+          >
+            <aside class="notes" data-markdown># The five levels
+* Two floors: parameters theta, hyperparameters Phi above them.
+* On each floor, either pick one best value or keep them all and integrate.
+* MAP is MLE plus a prior; MAP-II is type-II MLE plus a prior, one floor up.
+* Type-II MLE is plain maximum likelihood run on Phi, once theta is gone.
+* The integral is what makes a level bayesian, not the maximisation.
+* Full Bayes stops optimising altogether: no closed form, MCMC or variational.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_ca898ec55d1ca742ccd26883ab633bbd7e3335df057a4086b78dd76b98137cdf.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_de9c2f721818fe12119e0ffa4395fc872805e411350b86e275e0b0f140759ce9.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_e8b7c959c50687f0047530cc069efe032deb7eab9cc54e0bacad3651156ca528.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_1f3a5f94944cb36fadd044a93b9e1f71075747f4c486ac90689e5a1e6e3e3061.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_a1730657a19ac8f73c75b71f74521d7c258e4deef88d2a3f8e35b8adecff82e6.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s2_6a64337dbfcd31310bccd8ab14fedbcac2645bac8ea81b6e29da1bfaafb24882.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_9bf8500b0412145c287c141c8baebfd424efb13aa1b7f4bd3352b2b32a9bd32b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_148e4460a98bf838d04369ca3013b8d145a839b2eaa8d84e619cd55c4a63aec2.mp4"
+          >
+            <aside class="notes" data-markdown># Characteristics of functional data
+* The object of interest is a function: defined everywhere, infinite-dimensional.
+* What we get is a handful of points, at inputs we did not choose, with noisy outputs.
+* Two sampling grids never match, and no sample ever pins the function down.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_ec5eec4cf46235cab71a78f260eba9cd7a4959eb76a8d2ab9d5bb8230f7554e8.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_28d42bc47893e373c473d6055baaa870b91ca3a50c5876dcd7da4ff8f6e1721a.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_fe713b784373b1407999f55a6448f0ddcb913c455bcde3a212d5a1b410217cfd.mp4"
+          >
+            <aside class="notes" data-markdown># GP from first principles
+* Two measurements of one swimmer: what happens in between?
+* A mean that goes from one to the other, so the prediction is correlated to both.
+* Uncertainty grows with the distance to the points.
+* More points to the left: the trend now depends on many of them, not just the closest.
+* Far from any data there is nothing left to correlate to -- only prior knowledge.
+* The forecast falls back on the mean of every swimmer, with the prior's uncertainty.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_f5cfbdf291575e818ebe150cf2e4f829a8288ea0bae4e11766ffee80a66ada1f.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_26e3b53cd657d608cce995e96c65eb417def530a8ce24438a24940b600ab7c0e.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_83cb1fb85f2c4b8680ff81421f7f94198a97491515f5bce6f85587c453087693.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_3716f49477bca5579118ae35a48190f84aa8c03ca35ca288903c794e9137c211.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_c3d8920b8c625fddcb036776d8f17b440b7bca1bd6c18c2dfe65e7dfc12ae16d.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_8a8ab411f88fc07da90d4c30ff31bb520ce15aa7170c5188b0f12270dde28fce.mp4"
+          >
+            <aside class="notes" data-markdown># Kernel design
+* The kernel is where the shape of the prior lives.
+* Squared exponential: infinitely smooth, everything within a length-scale looks alike.
+* Matérn 5/2, 3/2, 1/2: the same idea, rougher and rougher.
+* Linear: covariance grows with the inputs themselves, samples are straight lines.
+* Periodic: correlation comes back at every period.
+* Kernels add and multiply, and the sum or product is a kernel again.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_84be2dfee5ff9e786aa6e8d00e700ce39078f85aac955ec5c84636fc44467ffb.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_d114905925a28f85731ec580c032e55e7331ab9644eb4872b2ecf60f13cb96e7.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_d51506591c7501a7abcb375e6caa458f9a8fcf577199f73db2b60c4fb3833182.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_a476a910734310288715776184a8638d7ada0d72544cef3fe4d5e8bf8b8201cc.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_22aca653d4d7e8c99e841372e6144bd62cc1a5a8e708e0e7d379e540403a37af.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_98487cdc2b0e284869fd41d91ff6b5808cbb8a0769e5457fcc0655e8085075e5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_224797342594b5a3aa8919fb9078d10c6f77fcc293692622165f930949dd96c5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_8efa2c01274373531e8a483f89c3dc3ec85fa344edc8072012f9e4ecd75637b1.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_0354625f7c70b3af3f6fed731f2624f399caa7a682d924a8c81a318afbf7271b.mp4"
+          >
+            <aside class="notes" data-markdown># Model selection
+* The three things we needed become two objects: a mean function and a kernel.
+* Read the prior at two inputs only: the pair of values is a bivariate normal.
+* The tilt of the cloud is the kernel value between the two inputs.
+* Move the second input away and the correlation, hence the tilt, goes to zero.
+* Any finite set of inputs gives a normal, so the data has a density.
+* Three terms: how well it fits, how complex the covariance is, and a constant.
+* That density scores a length-scale: too wiggly is penalised, so is too smooth.
+* The optimum is the length-scale used on the previous slides.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_ca1f4dbbc56e734768e2b87bb2605b3286abd86f96b80fe7e3dd70743b0ab635.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_9b8da60456590f6f044b6d9a69aac5517236f3bf5769f32a52b484ec60c75567.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_9f5b0dc902af773ea0edd553adecc94bbe3acff0674bd351cdd49c2d82675a9d.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_dbb2b6ca56eda4bf3aac6ebe0840162bc20920ab763e7ae4016c1680d0dfe8fd.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_9b1ee51f90d729511b2a2aaf40a711e6097ef2bfc001f1c28356783143b22136.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_105c7cf36502a78170061e1f428282305205ebfa4e18eebabc63baba1582ed92.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_e9c7e2061f4e7852aa310b01d93ae3aa0da5ff5cfc832e4e93c1b7e0e3db8f59.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_35c013427a179669b9e80bfd9bb34bd8e0a9de62624a2b6116ee92d2691e6d99.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_1c77f715acc83bdd26ce84fd4c26cca06a329e34b907c58a13cb6bee7817c450.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_02622fb576c8e61cdc8cec9fbccaa142a149d4e353ea6e5a539d7d7b038810b5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_dc6bae10133b2ac8d51c37ec7d56206f502419ae369e4f85d2d96c929567e894.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_8bb7fe72cff65dab9df950656f8c477ff47d69a26b2fc9f7e6b19ba919319278.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_f8fadf03c83b74d3e1b30d90f83876d9ebd7898af684521e5527beec4ec904b8.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_59b3935701ecceac110e0514e5afe93375eeab5f6bfabafecbc4bec0117b0be8.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_2e9e7558678d0fb92acbbc7974580cc8e85a5d5c4caddc95215dd284ca238e53.mp4"
+          >
+            <aside class="notes" data-markdown># When the likelihood lies
+* Same career, same constant mean, now with all three hyperparameters free.
+* Start from a poor guess on the left: the climb leads away from the good solution.
+* Left end: the signal variance has collapsed, every point is noise around the mean.
+* Right end: the length-scale has fallen below the spacing, the noise has collapsed instead, and the fit spikes to each point and forgets it immediately.
+* Both are real optima: the gradient vanishes there, they are not failures to converge.
+* The valley between them runs far below the panel, so no optimiser crosses it.
+* Start anywhere reasonable and you land on the middle solution instead.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_35d5db79bf6fe47bd4e8277073f9f774bd763f28e81d02b5d5f410e4b321eac6.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_eda82b01925c1c019100f2dbd2bf28a8a29a2de29bf9ef49fccf24c26bfbfc90.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_fc993f82f6f752d9ffcf48ffa99989f351d8f9d02f8facf77c4df05e0eabbc6a.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_4d14b40c26bd1b08e59aaafd09772ac127ec07395b09e94db28f99f2eb3a8d03.mp4"
+          >
+            <aside class="notes" data-markdown># Where are the parameters?
+* Ask the room first: on which line of the table are we?
+* The prediction is a linear model: the weights are the vectors and matrices.
+* The mean and kernel functions only say how to fill those weights in.
+* The constant, the length-scale, the variance and the noise are one floor up.
+* So: type-II MLE, aka empirical Bayes.
+* The weights are never optimised, and there are infinitely many of them:
+  GPs are infinite-dimensional, non-parametric models.
+* If a Gaussian process is a car, the MVN is its engine.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_3a93baf01a1eef36e2b0adb90b8f7cd0a33da955209defc72a38d72eff13cdb0.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_2bca22f399ef13cc7275ea936caee7482d523521de826f4e99d24321eb86eebc.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_0e6a127f4d728ba2881ff640666eacccc2271059e24fe47ee32833b76c9cc8ec.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_3bc0f9066d03f2d1e21300b2e1b955d1ced1039d18233839a0d8c898493a1b94.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_d45b5e0b44da5b30a41646240a54eff6b779785be910255d011d24f882d5ed9c.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_58d6192abcc7987367ed2bb4d8411916316ec035a749c6099aff529c5486feab.mp4"
+          >
+            <aside class="notes" data-markdown># What can it do?
+* Monthly mean CO2 at Mauna Loa, the longest direct record we have.
+* Everything before 2010 is given to the model, the rest is kept back.
+* The kernel is written down first: trend, seasonal cycle, irregularities, noise.
+* Nothing else is told to the model -- no trend removal, no seasonal adjustment.
+* The fit goes through the data and the forecast keeps the seasonal cycle.
+* Sixteen years later the truth sits at the edge of the band: the trend accelerated.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_accca4b4a446f08be3b9801a0d5741ffbac64d3463ed603262615e084308b424.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_3b5a954c0e6fc817e0d4cbd49b273123ec42083ec784b77c64f1c37b6a195fcc.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_703369f39287176ebd9386ece265d8631dc05f0bb134f046aba894338c6321ee.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_de45ecd934e7110c2c6e47b50fa613589c63e52e2e045d0306fd10d6e42f625d.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_93e7ba6943923f2d30386b516f18c5ca0db7f9106ab3259882ed4e1bb0f0b32c.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_ea738f41078e93fb78c97817f28a77f12e6080453f761726d8450898a86ff22a.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_a9f2ef9c82cf0968ec2cd730d8708f052cc3dac1f6ce878aab266cca69b04070.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_d6b2948c1e844076f2976c76f2a26714d72a41a5bad51d0d3d2d3cfee3a60625.mp4"
+          >
+            <aside class="notes" data-markdown># Why did I call it useless?
+* The good first: a GP hands back a distribution, not a point.
+* Noise and lack of data are two different things, and it tells them apart.
+* That is why it turns up as a component inside bigger methods.
+* Now the price: superb between the points, much weaker past them.
+* Cholesky is cubic -- the model dies on large datasets.
+* And nothing in it says what to do with many series at once.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_9f6084dd98c6e150cd5786cfd7bf6904ff0891f5697ea830a00e97efd5f97a4b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_3e3d542c9089a885c9dc17b184c92be17c6fee078060c80cf26072b6903722a9.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_4e3c1b8383b8672138f8e57b409cd3100399424b27bcf16517110e733f6faf2f.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_77cee3d7baffe97fd2f311911e9d4d8545df403c18b144db5f0f95b0522fd632.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_52ab431b69e54f396b8ae1792fdfabbbf3254da4195eb6db9ee34fd3e5d27389.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_0e4f2a0759a7fe2e1a91871934f144a9391f18b1876c7c8648f62935246f8dd8.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_7b5c99057de49bf811379f0c6fe0e97139a1a0833d1dc207c5143435945430d2.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_9fcda5d9d0e58a0f8391a6b53a6ecef766366ccb1b0ed66246a92a1b4638d404.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_03aa88708ed6dac65343c11b2078d7966d0143f3e14d9e1aa18747c8309e48ef.mp4"
+          >
+            <aside class="notes" data-markdown># Throwback to the hypothesis space
+* Same picture as in chapter 2: F is every function, H is what the model can reach.
+* For Gaussian processes H is tiny -- most tasks sit far outside it.
+* It is not that we cannot know; it is that the model cannot approach f*.
+* But inside that small region, a GP is exactly the right tool.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_864a48539531c78ccc0f51aa18c46a1cda72021d080ec3167141f7145bae6707.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s3_162e3b2023e95160327dec649ca7edb59b42e08fa0631a55619e4074f1ba203a.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_9cf73a4b23f2a118ae4b154d3269c8cf1b2177a3210578d87b3e4ff1d5133c25.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_e2e7d06aa3e66b9f5412949399a82bc43a479fedc064b687505e7bc2c7208522.mp4"
+          >
+            <aside class="notes" data-markdown># The generative model
+* One observation is a global trend, a task-specific deviation and noise.
+* Each of the three terms gets its own prior: two GPs and a Gaussian.
+* The mean process varies more than the tasks that ride on it.
+* One draw of the mean process, one task sampled at 25 inputs, then noise.
+* The observation is what you get by stacking the three bands on top of each other.
+* Every other task rides on the same mean process, on its own inputs.
+* The prior on the mean process is not tied to one cluster: draw it again and the
+  same machinery gives a second population of observations.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_75075fb0c75158b4340b38a097b6f28007b1a7f0a3c4c2edab6764735f944f50.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_0b76c0ced5e298cfc4a03bccb4703171197e65e7b2bf7045d371e56425d1df57.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_5fdda1878b35e1869b6356f8fd83d94605d21f73907299953cfbe1664dc23472.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_42c57512b75b05c95f8d4ac128edffe9ff414bc3b5a279f2543d95aa25ee5f94.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_52b0e6b51571931b7ba5b8479ed4d69889f1517ee4f0169368916bd6613bfa88.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_8413e7d5a541259a15f3686651a5b1c9630881f25e9397c797c81351148620e2.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_ade1d69c36001046d6eade74d4a6926a64a0ff260629e526bcc777002f50ea98.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_997bb21a907f48fe2a2280710bedcbfad0294906cea8d483de2d4879eb94ef7b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_c78cb7bb79264027520aab953dfb2be1331bd2a4b23e177f620ebbee28372be6.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_38dc60a3573893291b50cb0fffe7343f42a6828c8a7dc436e1ef46dc42dd8d76.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_10e2b148dc75fb0def668898ce54ec77d6b0f0d26c5e7ff62347370e3fae5017.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_4eed8da49153352b3dfdcb08665fb5d72aed94ab6d93dfd467bccf3f680288a7.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_987aa32de402110cdd8025834d2ac9ab6babbdf177f53cbff730d02ed84751d4.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_071c0bf5f4a63632766c1dd004d0b8cccafd541ad76d698da6b52c5c6a0c3ae5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_b287ba7ca62c829b1dc64c1986378aa4df65e455ab3c4c6d5fa75195c55f5946.mp4"
+          >
+            <aside class="notes" data-markdown># The parameters to define
+* The generative model in full: a latent assignment, a cluster mean process,
+  a task deviation and noise.
+* Six quantities to define or optimise, one line each.
+* Two clusters, their mean processes dashed, the tasks riding on them.
+* The hyper-prior mean starts at zero, then constant, then affine -- shared by
+  both clusters.
+* Cluster kernel: variance sets how far the two mean processes wander apart,
+  length-scale how smoothly.
+* Task kernel: same two knobs, applied to the deviation of each task.
+* Mixture proportions decide how many tasks land in each cluster.
+* Noise is the last term, and the only one that is not a process.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_da27e07da8c88181a0d87b02873ff38ccd9fc9392bccef76b1a8c8a76bea97b5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_98056394d37b8723b31eda47f1d42a98605bbb190cda0711d72df810d3665d50.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_34fe7012a38a56d5046cafa04e530c6d9791aeb085cd1749f540c8568c796bee.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_cf24d346aedd031980d7ab97a26d88a43df34ca1eea1c6c3f2d3b8350bbd6105.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_a7b35838a0c7ccd58e8fefa71fdddefc4b8d005c4e188848adb148dd64f83fe1.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_b4f8220492bac4e75df0a36945f00bb2e6f8eb3f8e487308856c43f0c9a8b607.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_306e2ae237a4cb4674336081f8e6e7805d447eae919a4b823927252001a7d4ce.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_711d174d3dab0032958cd6163e5ebba47c7d440408f6fdeaae93f8fe792cbe71.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_ac9cc5b3176e42b4c883856ff1df5a0914b65aca29aa97063cff4b6c741f9173.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_6d5965a0e916ec40d81d25a65b021b760d44603b5c4c882ecf56f39170da397b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_940bfcc54c50e84599d4185b032b7f1d8320bb2e04dda06b26977820e007bc9b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_fcc92d1672963e56b96e0f77a17a4f7db3e0ec5e38929a1bf68708956088c122.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_119ee0a9f55eba9552d6c32736238082c303f190e3b667b73eb688a05675dff5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_2c7de78017013e4abeb66ae85a3df5b51a34d2aa9aa5cec8d219cff203d18a59.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_c133fee79b8ff3eb2670ac1d7f0349fe04af6b235166a5153b65f8fe7760f49a.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_80d54551dcf588a2cfa09f5e6ab9146ec74dd3429a9d25c2fc03960dbfc6baf0.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_71fc0ac5ba78991b4e89687606cf038f51983b130a0a8ee7a23c23df25f1b179.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_0405236aa4bc126c5a08e5276c6c78fef5c0fd75039a0402032484ff563ed824.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_5ef3fe9ad8fd4c149202bb19c378963c0fd04a428bdcbdb5c0a3028615ba42cf.mp4"
+          >
+            <aside class="notes" data-markdown># The configurations
+* Four flags, each one a constraint the framework can drop.
+* Isotopic tasks: every task observed at the same inputs.
+* Shared cluster hyper-parameters off: each cluster gets its own prior mean,
+  then its own variance and length-scale.
+* Cluster hyper-parameters in tasks: the task kernel differs from one cluster
+  to the other.
+* Shared task hyper-parameters off: every task gets its own kernel.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_da0b46689062e2526a877ca48b7b47b94d6bbda4b527df9da624d92753d2adcc.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_fc8e85c5fc9a7f488495dd4c66061e2aed6d23939edefede4d705295a9c83666.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_1ae6fbdf45f6ac9860675b1daf084663cfe879207d8bf994f0afc047f91bd669.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_2d2d0350bb7566ea02ef9c5a7650650818695185797b25042d118479ee0eb5be.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_6d283d611c035ffa2a8d0f50a05e13d34e88e9a8cd40f796986214a18f4b7c01.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_c51126e0994ef7380898631467e88cd77fee0fb09fbdbf80d8f579d5cf0e4b86.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_8a297f7686148908439f98f43ea04c2b3b097fa356443ef4391e27094904a990.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_5b0dc24691f48dd09e54f0e5ac61ac7dc65f3e0799b7f4ace4533173f3ed12c1.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_29888f99a1577203eb668dcbcde9046b7692b6640cbd2ee4fa4d3feec673e790.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_444af56de2806143a880e9f8fbce8b51d2d568c1b62a2ca2f9e46d40413fc9f9.mp4"
+          >
+            <aside class="notes" data-markdown># Several channels per task
+* Every task is measured on two channels at the same inputs.
+* The top channel separates the two populations; the bottom one does not, its tasks
+  wandering further than its mean-processes are apart.
+* Fitted together, the two channels share one set of cluster assignments: the top
+  channel is what makes the clustering sharp.
+* A new task arrives with the bottom channel only -- the ambiguous one.
+* It still gets cluster coefficients, because the clusters were learnt from both
+  channels at once.
+* And with a cluster comes a prediction for the channel it never measured: the
+  mean-process of its cluster, widened by the task variance.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_b93d4c4af0fbd97d2cf1ddba5242a6b7b16078c1f14a43e8e4ae5cb47faa588e.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_6bfe0c7eb3d93fa5a4ec1b81db59fb7b060ba797a2f9dcb7b627fe3d753bacd9.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_fc5977c2f7377d9348418796b28e74923a8ecb6959a0fb67a9b622130f421a68.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_098994b5ace41f7eeb50454113e51ed5dc8ccde5551e558cb5bd9eafe176cd8d.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_910880fe17d85aadd59b09759c42d113ee058a5f221c8f156f3b3a51ae64dda3.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_1fbf3cbd596a2de6e4f0c3d8e72c72954a83ca9749d27174479ef85030f9bc3c.mp4"
+          >
+            <aside class="notes" data-markdown># Multi-output kernels
+* Three families, one prior draw of two outputs each, same random draw throughout:
+  what changes between the columns is only how the family ties the outputs together.
+* ICM: one shared kernel, one coregionalisation matrix.
+* LCM: a sum of such terms, each with its own kernel.
+* Process convolution: one latent field, one smoothing window per output.
+* Adding a latent process frees the second output from the first; the convolution
+  family has no such knob.
+* Both the mean-process and the task deviation can take any of the four, and the
+  pairing is a hypothesis about the data, not a default.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_9f138a9d33d8eafbb183047f0d618d2443f76d6681c7529470c0de693ae4c96c.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_f1abfd1af3cf6776ecec880302aa9799247177501a4c86b43aaf2156ab9ebb19.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_a4f8b832906d45ac8fb60d04961cdf8a7297a678cf2b1ae52f495ad6538b4376.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_ca011a110d33e878e3fed26f10f4d52dbfd31b896de2546f65379b162792a2aa.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_3bd252526b50b970dddd8f34ec54936feebecde82f18178f477a90c40c4765da.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_4ad5748ceb751257091b6e77f7570618a8ae0ad9e8a441402764ae320f7c2cd1.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_004eb197d66ece06ec4084520be14f5c1491ccc4fa6a5652489115de76107567.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_75e12c6be5fc8dc5a95b265ffba24708eb173dd14ae55d1fef5a34be499b7570.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s4_c2643bdf6abae6bd199fb7dcd3e15923c987fe37ea0d5a00b5a0010da9056c19.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_637a23e84fc1308b4e12cd3acb79fb18e09814225fc9eaa952533ce8ac3620c0.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_b4954addd3af9187f5c78adeef7983023bba2562aca9c40b3155beb23527183f.mp4"
+          >
+            <aside class="notes" data-markdown># Early prediction of child obesity
+* 1177 children of the GUSTO cohort, birth to 10 years, one task each, measured at their
+  own visit dates -- a fully heterotopic grid.
+* The clinical question is the line: overweight at 10 (22.4 BMI, sex-specific in the fit).
+* Five mean-processes. They agree on infancy and on the rebound, and separate after it.
+* One girl, three years of measurements: the draws already put some mass above the line.
+* Right: the whole test set. Every child's risk (blue = fine at 10, red = overweight),
+  and the five scores at the study's 5% flag.
+* Stepping the context one year at a time: her fan rises, her dot rises with it, and the
+  specificity is what improves -- the model rules overweight *out* long before it rules
+  it in.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_8c3e952711ea29518144d9d5365f9ee8f56276d884337924541ed878921330d5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_7860b5b4dc3e5f22b725037950af3183001396f3f611944e3f82c53126999cb9.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_8bb61d80da11f6dce489571b1c2810b59d89a4ad696acd848af41f471973c96b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_e946e25e39d644cb6b15898fe3629fc0a9c9f5d421f4855967436f2b8b33f10c.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_7f157020d0184c36f5c95b30b47b2616f78aa4241a6c2fb54475713941ca2c5f.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_b23efe79ea6169bd338942aa4d89044e5cda4752d49142199574f27e54b5fc68.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_d536cca0625cb488c870cf7745b97407f8340e97fe187fa874567cb0c6027d3e.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_6f8cff1748b186b78e25e9116b230e14f670fe5654312618bde398ba000f2dea.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_a06a9cf2ec05fd351b99873c8d54c97641954dd911ca4ea18c548db06d9642c0.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_16f40796085c505499760f9d3a8192cace05314361914f0cd950b37f0082dbe4.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_7fa6f98563d28fb5b145669c4c75e1979609a89420e5def7622195755e9eb31c.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_6be993c8a3e220bcc54e549e42faea440fe833ee0d8d4dc2760332dc6b0776a8.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_e1a6fd19c9b6b8ec8443250120775b26cd9dd4c1f1b6e49df22244b372a1bb3a.mp4"
+          >
+            <aside class="notes" data-markdown># Trajectory clustering around a roundabout
+* Every car crossing the roundabout is one task: its x and its y are two *channels*,
+  sampled at the same normalised times.
+* As trajectories, the data is a picture of the roundabout. Split into components,
+  it is two ordinary functional datasets -- and the clusters are plain to see.
+* Six mean-processes, one per route through the roundabout, fitted on both channels
+  at once.
+* A car seen only up to the middle of its pass: the mixture splits evenly over two
+  routes, and the samples show what that means -- we do not know which exit it takes.
+* Another car, whose y sensor failed: x alone pins the mixture on one route.
+* With the route known, y follows -- the mean-process of that cluster, widened by the
+  task variance -- and pairing samples of it with the measured x rebuilds a trajectory
+  from a half-dead sensor.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_97bcb2fe57aa14c60cd988564a70741872fe0f5a6360affb02130806676e56e1.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_0b6144ca89714493a576d723062e2d91f4d3fd9d37e3dc4ef18669cc15ffe246.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_7b619817ec7feab8856c3a380d751408212544daff239a3d3609e2708a04091a.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_d4be37ec9527b44e21f22efcaaec0672e1d460a741872680fbcfd921af61e4fb.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_1df5cd3e6011cec3311c551f39b0551e7a1ca5269cf845f89c8ed7929994171b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_ccd02e456e2b8cf86b72eeb64c8c73b2f4764683609d20b190b1ee6d1963bea4.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_2612438225df4239ae5a4a87f3a5735b4e3f8979570ed350d296029d57981498.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_928136ca86310b1d19ce451cd94d9b6da0530237d4628b0ef5550342cc60f7ef.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_dc9eaa884f99d369d63345d559cbaf8695c2f1c6e67265d24b2fd37500d52a87.mp4"
+          >
+            <aside class="notes" data-markdown># One swimmer, two pool sizes
+* 128 French swimmers, 100 m freestyle, one task per swimmer, one colour each.
+* Two clusters, and they are the two genders -- the model is told which.
+* The same swimmers race in 50 m pools too: a second output, observed on other days.
+* One of them: a long, fast career in the 25 m pool, and no Olympic-size race at all.
+  How fast would she be over 50 m?
+* The draws are not centred on her cluster's mean-process: her own 25 m deviation
+  carries over to the other pool through the task kernel.
+* Add a few of her actual 50 m races and the draws collapse onto them.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_892617420928a9d73c3c347b0b411aef9e3e020493972d5f2cd717e0b51fad56.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_34ad6f9688f174f8e43879e0c69467e8df16d22205ab595ca561cb66cfce5f4f.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_1ecc6f2ae64006bcfa6d67637e073c3812a1601ec0413c28ed3a3b40f0ba225d.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_8491d7312cc09452316c5eaa2704761e8dba4c135219358b6c37c1723dea4dd8.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_c66ac0e4d8e7ba8013db38437b78a3d28f009196a639ef4e2bfa000283eea85b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_f1bf52d5ba7202642881b9eae03f03ead5dd0e45cda0678a816cb8c1b92b6e24.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_a81ef6fcc4005032276e553c8e08e657ffcaa66d81c7d0cbdb9d22397864f685.mp4"
+          >
+            <aside class="notes" data-markdown> # SOIR
+	* TODO
+</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_6322abb90fa6248dc775fe1b85e4774977738412aff5e9b300daec13cb094a65.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_957f6fe5d33f7820f7fa44195328738409b8fad82ff8b1ddc60c7d98de369c3e.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_9e7fb09c6be9003eb4dfec67f37de4e7b5970eb15213c19cde61ef95d13f79e3.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_7826e24bde5251e26b5f355ab06e8df1df33c2b28dfd372d1e909d3504614761.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_dd0fa9e4732275d629afc75fb2bf973a81c88db3688870defb0075dc4cf116d7.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_9f729cd839ebf45f82bfa77fe8a41f824d5ef05d225bb59c7ca6a1a783d2a6c5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_267a0d64b69e71e7d806a03e3a755e8eb2a7a313f6c9782b3032ee7f07bf998c.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_51bf074cd2c954ef436b5c249778908379a4d5f056d8fd7abde5f02b986c12a1.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_64e3341b7a53d89792efc2e4444ffa5fd4fd5db48c2599379f7986e072853e49.mp4"
+          >
+            <aside class="notes" data-markdown> # Where the profiles sit
+	* One point per profile: KL to the lower left, Wasserstein to the lower right, likelihood up
+	* Both horizontal axes run from their maximum at the corner out to zero
+	* AM in blue, PM in red
+	* The bulk sits away from the corner -- that is what "normal" looks like
+	* Fading it out leaves only the profiles that crossed a threshold
+</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_cf597d754cb44e75e8590ada1540f98c62648a29f14785ee86c63910282c1fcd.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_d4474dd4031664380193ba0fc06c07e42f6605d3f7f4a4288a7aea2dc0e443ba.mp4"
+          >
+            <aside class="notes" data-markdown> # Removing the outliers, and starting over
+	* Back to where we left the fit: both clouds, both mean processes, both predictive bands
+	* The profiles a metric flagged light up -- thirty of them, fifteen per cluster
+	* Drop them, refit, and the mean processes barely move: the fit was already robust
+	* Side by side with the published averages, the shape is the same
+	* Last, drop the task variance: what is left is how well we know the mean process itself
+</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_99ffe8f96ab15705491781fa4e37b719d427bc0e6e5a7470b177e1cb811368f5.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_9b2520a03620a8c4c2fa01fa906f8691e42660cfddc52884dc9125b4572e5368.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_f9ee10ee0ca11e7ac7d21214efbaef82acd0a8fa85a4c137078826fc8cb88673.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_784183f4111af229e1637b7ef3186b1b9ecb5aa4862ae776d9fb00f31e07316e.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_b382e2905c36864e860cf10f2bfb80473b5571d7a9d28a789563a1f43f0ec0ba.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s5_fc6d2e1a20e7d648e4cc786e0f01bee369e3c0c63212f181286445c41a382ff1.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_956c3e34ca12671434a05d3cd4a3211acbe053ec500f1653313a768f1d492d36.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_74515819c5743e9bb1168cfea4dc3a08a8041814a7fd926ae54063259a26dcd8.mp4"
+          >
+            <aside class="notes" data-markdown># Honest opinion
+* No free lunch: this is not a general-purpose model, a network is far broader.
+* But the applicable set is where it wins -- structure, uncertainty, small data.
+* The cubic cost is real and the Cholesky memory is worse.
+* Mini-batching over tasks and sharding across devices come for free with the package.
+* Sparse approximations are the next milestone.
+* And the usual caveat of a young library: the API will move under your feet.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_f238a68e58aa8e1b20317823ddeb606784deb46d633319b74d98342ef7e81e1e.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_a0601cc99b77636944784b93503a53c25d9e3689bc965b24bca5d58d3865670b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_1f58f8e67edd6d2ede3782eae30c8cbe4164a7e28a772afa32752eb45617d723.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_8d22b0612ab72a9fc68ddc3283831abe111dd3d3954e3d3ae48c1b67b20b356b.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_ce854c8d0770977ea6cba2664f94d63de96724fa7880bff23b59b581e604d8b2.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_e12f3fe086e707d1fec9f83b39a7dc50edbb272b19be29743a9b8d845ebb6166.mp4"
+          >
+            <aside class="notes" data-markdown># The repo, the resources, the tutorial
+* Murphy for the probabilistic ML background, Rasmussen & Williams for GPs themselves.
+* The MIMOSA repo: scan the code, leave us a star.
+* Magma and MagmaClust are the papers the framework grew out of.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_69049fd902a8411a28c0f462c0a076d66d0741e0e2570f63249b0e8584b694f3.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_aa005e1b003b2e55a4b29caaf60a7e8e90b4636c2d8f37da8959acc73249ff97.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_91d27902870b2d2d8b5a5639705ee80a4ff5e8b768a83deb6c87ae677d7aa561.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_a8f06ca1c7b6ac3f37c3c83bb3d79c98b5633fe0af233adf2a0ae1540d8b6b1d.mp4"
+          >
+            <aside class="notes" data-markdown># References
+* Numbering follows assets/references.bib.</aside>
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_e850c4be4fa9ef23e4ebf5de9096ea2ea3b3bab4066e686349ef194f70396644.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s6_1544a076abdc06db48b3de82d2f8e82c859121e074fddfae6e875d9f393a3993.mp4"
+          >
+        </section>
+        <section
+          data-background-size='contain'
+          data-background-color="#ecebe4"
+          data-background-video="EPMLSS_26_SLejoly_assets/s7_4fc044c11f38c2cbc591b960ac49e35f0507ffd25aca2b9d639c1ebea9596aa0.mp4"
+          >
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/notes.js"></script>
+
+    <!-- To include plugins, see: https://revealjs.com/plugins/ -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@6.0.1/dist/plugin/markdown.js"></script>
+
+    <!-- <script src="index.js"></script> -->
+    <script>
+      Reveal.initialize({
+        /// The list of RevealJS plugins.
+        plugins: [ RevealMarkdown, RevealNotes ],
+        // The "normal" size of the presentation, aspect ratio will
+        // be preserved when the presentation is scaled to fit different
+        // resolutions. Can be specified using percentage units.
+        width: '100%',
+        height: '100%',
+        // Factor of the display size that should remain empty around
+        // the content
+        margin: 0.04,
+        // Bounds for smallest/largest possible scale to apply to content
+        minScale: 0.2,
+        maxScale: 2.0,
+        // Display presentation control arrows
+        controls: false,
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: true,
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'bottom-right',
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+        // Display a presentation progress bar
+        progress: false,
+        // Display the page number of the current slide
+        // - true:    Show slide number
+        // - false:   Hide slide number
+        //
+        // Can optionally be set as a string that specifies the number formatting:
+        // - "h.v":   Horizontal . vertical slide number (default)
+        // - "h/v":   Horizontal / vertical slide number
+        // - "c":   Flattened slide number
+        // - "c/t":   Flattened slide number / total slides
+        //
+        // Alternatively, you can provide a function that returns the slide
+        // number for the current slide. The function should take in a slide
+        // object and return an array with one string [slideNumber] or
+        // three strings [n1,delimiter,n2]. See #formatSlideNumber().
+        slideNumber: false,
+        // Can be used to limit the contexts in which the slide number appears
+        // - "all":      Always show the slide number
+        // - "print":    Only when printing to PDF
+        // - "speaker":  Only in the speaker view
+        showSlideNumber: 'all',
+        // Use 1 based indexing for # links to match slide number (default is zero
+        // based)
+        hashOneBasedIndex: false,
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: false,
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: false,
+        // Enable support for jump-to-slide navigation shortcuts
+        jumpToSlide: true,
+        // Push each slide change to the browser history.  Implies `hash: true`
+        history: false,
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+        // Optional function that blocks keyboard events when retuning false
+        //
+        // If you set this to 'focused', we will only capture keyboard events
+        // for embedded decks when they are in focus
+        keyboardCondition: null,
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+        // Enable the slide overview mode
+        overview: true,
+        // Vertical centering of slides
+        center: true,
+        // Enables touch navigation on devices with touch input
+        touch: true,
+        // Loop the presentation
+        loop: false,
+        // Change the presentation direction to be RTL
+        rtl: false,
+        // Changes the behavior of our navigation directions.
+        //
+        // "default"
+        // Left/right arrow keys step between horizontal slides, up/down
+        // arrow keys step between vertical slides. Space key steps through
+        // all slides (both horizontal and vertical).
+        //
+        // "linear"
+        // Removes the up/down arrows. Left/right arrows step through all
+        // slides (both horizontal and vertical).
+        //
+        // "grid"
+        // When this is enabled, stepping left/right from a vertical stack
+        // to an adjacent vertical stack will land you at the same vertical
+        // index.
+        //
+        // Consider a deck with six slides ordered in two vertical stacks:
+        // 1.1    2.1
+        // 1.2    2.2
+        // 1.3    2.3
+        //
+        // If you're on slide 1.3 and navigate right, you will normally move
+        // from 1.3 -> 2.1. If "grid" is used, the same navigation takes you
+        // from 1.3 -> 2.3.
+        navigationMode: 'default',
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+        // Turns fragments on and off globally
+        fragments: true,
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: true,
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+        // Flags if we should show a help overlay when the question-mark
+        // key is pressed
+        help: true,
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+        // Global override for autolaying embedded media (video/audio/iframe)
+        // - null:   Media will only autoplay if data-autoplay is present
+        // - true:   All media will autoplay, regardless of individual setting
+        // - false:  No media will autoplay, regardless of individual setting
+        autoPlayMedia: null,
+        // Global override for preloading lazy-loaded iframes
+        // - null:   Iframes with data-src AND data-preload will be loaded when within
+        //           the viewDistance, iframes with only data-src will be loaded when visible
+        // - true:   All iframes with data-src will be loaded when within the viewDistance
+        // - false:  All iframes with data-src will be loaded only when visible
+        preloadIframes: null,
+        // Can be used to globally disable auto-animation
+        autoAnimate: true,
+        // Optionally provide a custom element matcher that will be
+        // used to dictate which elements we can animate between.
+        autoAnimateMatcher: null,
+        // Default settings for our auto-animate transitions, can be
+        // overridden per-slide or per-element via data arguments
+        autoAnimateEasing: 'ease',
+        autoAnimateDuration: 1.0,
+        autoAnimateUnmatched: true,
+        // CSS properties that can be auto-animated. Position & scale
+        // is matched separately so there's no need to include styles
+        // like top/right/bottom/left, width/height or margin.
+        autoAnimateStyles: ['opacity', 'color', 'background-color', 'padding', 'font-size', 'line-height', 'letter-spacing', 'border-width', 'border-color', 'border-radius', 'outline', 'outline-offset'],
+        // Controls automatic progression to the next slide
+        // - 0:      Auto-sliding only happens if the data-autoslide HTML attribute
+        //           is present on the current slide or fragment
+        // - 1+:     All slides will progress automatically at the given interval
+        // - false:  No auto-sliding, even if data-autoslide is present
+        autoSlide: 0,
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+        // Use this method for navigation when auto-sliding (defaults to navigateNext)
+        autoSlideMethod: null,
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+        // Opens links in an iframe preview overlay
+        // Add `data-preview-link` and `data-preview-link="false"` to customize each link
+        // individually
+        previewLinks: false,
+        // Exposes the reveal.js API through window.postMessage
+        postMessage: true,
+        // Dispatches all reveal.js events to the parent window through postMessage
+        postMessageEvents: false,
+        // Focuses body when page changes visibility to ensure keyboard shortcuts work
+        focusBodyOnPageVisibilityChange: true,
+        // Transition style
+        transition: 'none', // none/fade/slide/convex/concave/zoom
+        // Transition speed
+        transitionSpeed: 'default', // default/fast/slow
+        // Transition style for full page slide backgrounds
+        backgroundTransition: 'none', // none/fade/slide/convex/concave/zoom
+        // The maximum number of pages a single slide can expand onto when printing
+        // to PDF, unlimited by default
+        pdfMaxPagesPerSlide: Number.POSITIVE_INFINITY,
+        // Prints each fragment on a separate slide
+        pdfSeparateFragments: true,
+        // Offset used to reduce the height of content within exported PDF pages.
+        // This exists to account for environment differences based on how you
+        // print to PDF. CLI printing options, like phantomjs and wkpdf, can end
+        // on precisely the total height of the document whereas in-browser
+        // printing has to end one pixel before.
+        pdfPageHeightOffset: -1,
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+        // The display mode that will be used to show slides
+        display: 'block',
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000
+      });
+      // Override SPACE to play / pause the video
+      Reveal.addKeyBinding(
+        {
+          keyCode: 32,
+          key: 'SPACE',
+          description: 'Play / pause video'
+        },
+        () => {
+          var currentVideos = Reveal.getCurrentSlide().slideBackgroundContentElement.getElementsByTagName("video");
+          if (currentVideos.length > 0) {
+            if (currentVideos[0].paused == true) currentVideos[0].play();
+            else currentVideos[0].pause();
+          } else {
+            Reveal.next();
+          }
+        }
+      );
+    </script>
+  </body>
+</html>

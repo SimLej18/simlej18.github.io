@@ -11,7 +11,9 @@ const config = {
 		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
 		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-		adapter: adapter()
+		// strict: false lets the dev-only /admin routes stay out of the build;
+		// every other route is prerendered by src/routes/+layout.ts
+		adapter: adapter({ strict: false })
 	}
 };
 

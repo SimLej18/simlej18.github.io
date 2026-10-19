@@ -1,0 +1,123 @@
+[
+  {
+    "slug": "lejoly-2026-probabilistic",
+    "status": "featured",
+    "doi": "10.5194/epsc2026-913",
+    "csl": {
+      "type": "posted-content",
+      "title": "Probabilistic detection of outliers in Venusian atmospheric profiles from VEx/SOIR",
+      "author": [
+        "S. Lejoly",
+        "A. Piccialli",
+        "A. Mahieux",
+        "A. C. Vandaele",
+        "B. Frénay"
+      ],
+      "venue": "Copernicus GmbH",
+      "date": "2026-07",
+      "abstract": "IntroductionThe dynamics of Venus’ atmosphere around its terminator region currently remains poorly understood. The main source of temperature observations is the SOIR dataset [1], resulting from the Venus Express mission. The dataset contains 684 temperature profiles recovered through solar occultation, covering both sides of the terminator. The observations span from 2006 to 2014, amounting to an approximate 25,000 temperature points in total, observed at varying altitudes, latitudes, longitudes, and time. Analysis of the SOIR dataset reveals a lot of variability and uncertainty in the data, both within each temperature profile and between different profiles. Identifying outliers in the dataset is a mandatory first step to extract meaningful knowledge from observations. In previous analyses, this was done manually through visual inspection. We propose a more systematic, scalable, and uncertainty-aware approach through the use of probabilistic modelling. Probabilistic modelling of temperature profiles As seen in Figure 1, profiles from SOIR consist of a sequence of temperature points with their respective uncertainty estimate. Therefore, each profile can be considered as an observation of a Gaussian Process (GP) at discrete altitudes. GPs are probabilistic models used for sequential data analysis, well-known for their capacity to handle uncertainty. Using a multi-task Gaussian process framework [2], we can combine multiple observed profiles to learn a single mean profile. In this experiment, we separate profiles into two groups, based on the local time of observation (either at 6 AM or 6 PM).Fig. 1: Left: two profiles from the SOIR dataset, with their uncertainty estimates. Profiles from SOIR are often unaligned and have varying uncertainty estimates. Center: the whole SOIR dataset. Right: the mean profiles learnt by the multi-task GP, with 95% confidence intervals. Blue/red respectively correspond to profiles observed at 6 AM/PM local solar time. The rationale for using GPs is that any discrete observation of a GP is a multivariate Gaussian distribution. This includes every profile from the dataset as well as our mean profiles. Therefore, we can use any probabilistic metric able to compare two Gaussian distributions to assess how each profile deviates from its corresponding mean profile. A full atmospheric profile can then be characterised by a single value corresponding to its difference with the mean profile, no matter how many temperature observations the profile contained originally. Good examples of appropriate metrics are the Gaussian negative likelihood used to train the GP, the Kullback-Leibler Divergence, and the Wasserstein distance. The more typical a profile, the lower these metrics should be. Figure 2 illustrates this with two profiles. Fig. 2: Comparison of two profiles corresponding to orbits 1269.1 and 2256.1 with their corresponding mean profile. The metrics comparing each profile with its mean profile confirm that the first one is closer to the average dynamics of the atmosphere than the second one. Identifying outliers We can plot the whole dataset as a 3D scatter plot by using the three metrics computed for each profile, as shown in Figure 3. This representation makes it easy to identify profiles that are abnormally different from most other profiles.Fig. 3: Distribution of the whole SOIR dataset with respect to each metric. Each profile is represented by a single dot in 3D space. Most profiles of the dataset seem aggregated in a specific region, while outlier profiles are scattered in regions corresponding to high values of each metric. If we remove profiles identified as outliers, we can learn a more precise estimation of the mean profiles, as shown in Figure 4. We can then iteratively alternate between phases where we compute mean profiles from the remaining profiles and phases where we identify new outliers based on the updated mean profiles. Fig. 4: Left: Outlier profiles identified for both local solar times after the first iteration of the algorithm. Right: If we remove these outliers and retrain the multi-task GP, we obtain slightly different mean profiles compared to the ones computed on the whole dataset (previous mean profiles represented with dashed lines, new mean profiles represented with full lines). As with any framework used to identify outliers, this approach requires expert knowledge, both to identify outliers in the 3D representation of the dataset at each step and to know when to stop the procedure. However, seeing the dataset as a 3D distribution of points facilitates the process tremendously. Using metrics also eliminates possible biases and errors by providing an objective ordering of atypical profiles. E.g.: if an expert classifies a profile with neg-likelihood 50 as an outlier, then we can expect that profiles with neg-likelihood above 50 should be outliers too. Conclusion We propose a novel probabilistic framework to identify outliers in atmospheric profiles measured with uncertainty. By applying it to the SOIR dataset, we can both validate the methodology and provide the spatial aeronomy community with a deeper understanding of the data. Even though we discussed the interest of removing outliers from the dataset, we must also emphasise that those outliers are not to be fully discarded. In the end, these atypical profiles may provide information about rare phenomena in the atmosphere, calibration issues in the measurement device, or regions of Venus that are under-represented in the dataset. By providing atmospheric scientists with objective metrics and clear visualisations of the data at hand, this methodology enables easier analysis of typical profiles, as well as prioritisation of profiles worth investigating. This step is crucial to help researchers get from observation data to atmospheric knowledge. References [1] Mahieux, A., Robert, S., Piccialli, A., Trompet, L., & Vandaele, A. C. (2023). The SOIR/Venus Express species concentration and temperature database: CO2, CO, H2O, HDO, H35Cl, H37Cl, HF individual and mean profiles. Icarus, 405, 115713. https://doi.org/10.1016/j.icarus.2023.115713 [2] Leroy, A., Latouche, P., Guedj, B., & Gey, S. (2020). Cluster-Specific Predictions with Multi-Task Gaussian Processes. arXiv. https://doi.org/10.48550/ARXIV.2011.07866",
+      "url": "http://dx.doi.org/10.5194/epsc2026-913"
+    },
+    "notes": "",
+    "links": [],
+    "venue": "EuroPlanet Science Congress 2026"
+  },
+  {
+    "slug": "lejoly-2024-magma",
+    "status": "included",
+    "doi": "10.5194/epsc2024-382",
+    "csl": {
+      "type": "posted-content",
+      "title": "MAGMA Gaussian Processes to complete Venusian atmospheric profiles from SOIR&#160;",
+      "author": [
+        "S. Lejoly",
+        "A. Piccialli",
+        "A. Mahieux",
+        "A. C. Vandaele",
+        "B. Frénay"
+      ],
+      "venue": "Copernicus GmbH",
+      "date": "2024-07",
+      "abstract": ". Introduction\n\nWhen working with atmospheric data, researchers often face partial datasets. This is the case of the SOIR instrument on board Venus Express [1], which measured the temperature of the Venus mesosphere, inferred via solar occultations. Due to inherent limitations in the measurement process, temperature measurements are missing at varying altitudes in the profiles. While altitudes of measurements across the whole dataset can span from 60 km to 160 km, most of the profiles only contain a range of 10 to 50 consecutive measurements. Figure 1 shows examples of such profiles. To fill this data gap, machine learning, and specifically probabilistic models are promising candidates.\n\nFig. 1: Three temperature profiles from SOIR, with varying ranges of altitude. &#160;\n\n2. Gaussian Processes and MAGMA\n\nGaussian processes (GPs) are probabilistic models mainly used for predictions based on empirical observations. The capacity of GPs to estimate the uncertainty in their predictions makes them particularly appropriate for extrapolating atmospheric data. Since traditional GPs only try to fit a single function, adaptations should be implemented for the case of the SOIR dataset, which contains numerous profiles. Using one GP for each profile would not allow models to leverage information across the whole dataset to make better predictions. This motivates the use of so-called multi-task GPs, where &#8220;task&#8221; refers to an atmospheric profile in our context. The literature in the field of multi-task GPs is extensive [2, 3, 4], but most models either struggle with large datasets or have difficulties learning the covariance between the tasks. The MAGMA algorithm [5] is a recent advancement in the field of multi-task GPs that solves the above-mentioned issues. To complete a gap at a specific altitude in a profile, MAGMA uses both the profile values that are close to the gap and the mean value measured at that altitude in all other profiles. This results in better confidence intervals, even far from known observations. Previous to this work, MAGMA had never been applied to atmospheric datasets. &#160;\n\n3. Profile Extrapolation\n\nTo assess the performances of MAGMA, we compare this algorithm with a traditional GP working on each profile individually. First, each profile is preprocessed to standardise each temperature value and use a logarithmic pressure scale as a height indicator rather than altitude. As MAGMA needs profiles to share common inputs, each pressure measurement is mapped to its closest bin on a 250 discrete bin scale. We then divide the dataset into train and test sets. Each test profile is further divided into test observations and validation observations. During experiments, test observations are given to the models as a starting point. The models can then make predictions, providing an estimated mean value and a confidence interval for each missing pressure bin. The validation observations are compared with their corresponding predictions to evaluate the performances of each model. Experimental results show that MAGMA has significantly better performances than a traditional GP, as seen in Figure 2. It provides estimations that are closer to the actual measurement and confidence intervals that are more precise, as shown in Figure 3. &#160;\n\nFig. 2: Average performances of MAGMA and the baseline model on two distinct metrics. Mean Squared Error (MSE) measures the distance between predictions and true values (to be minimised). CIC95 is the ratio of validation observations actually sitting in the predicted 95% confidence interval (should be close to 95%). &#160;\n\nFig. 3: Predictions from the baseline and MAGMA, for different training settings. The test observations and validation observations are represented in orange and white, respectively. The grey-shaded area corresponds to the 95% confidence interval.\n\n&#160;\n\n4. Conclusion\n\nWe apply MAGMA, a novel probabilistic learning algorithm, to the SOIR dataset, enhancing predictions for missing observations. This contribution is a first step toward a practical application of GPs to planetary aeronomy datasets. Future research will explore possible enhancements to the data preprocessing and model architectures to complete the SOIR dataset with more precise and credible estimations.\n\n&#160;\n\nReferences\n\n[1] &#160;L. Trompet, Y. Geunes, T. Ooms, et al. Description, accessibility and usage of SOIR/Venus Express atmospheric profiles of Venus distributed in VESPA (Virtual European Solar and Planetary Access). Planetary and Space Science, 150:60&#8211;64, 2018.\n\n[2] &#160;Edwin V Bonilla, Kian Chai, and Christopher Williams. Multi-task Gaussian Process Prediction. In Advances in Neural Information Processing Systems, volume 20, 2007.\n\n[3] &#160;Edwin V. Bonilla, Felix V. Agakov, and Christopher K. I. Williams. Kernel Multi-task Learning using Task-specific Features. In Proceedings of the Eleventh International Conference on Artificial Intelligence and Statistics, pages 43&#8211;50. PMLR, 2007.\n\n[4] &#160;Carlos Ruiz, Carlos M. Alaiz, and Jos&#233; R. Dorronsoro. A survey on kernel-based multi-task learning. Neurocomputing, 577:127255, 2024.\n\n[5] &#160;Arthur Leroy, Pierre Latouche, Benjamin Guedj, and Servane Gey. MAGMA: inference and prediction using multi-task Gaussian processes with common mean. Machine Learning, 111(5):1821&#8211;1849, 2022.",
+      "url": "http://dx.doi.org/10.5194/epsc2024-382"
+    },
+    "notes": "",
+    "links": [],
+    "venue": "EuroPlanet Science Congress 2024",
+    "title": "MAGMA Gaussian Processes to complete Venusian atmospheric profiles from SOIR"
+  },
+  {
+    "slug": "untitled",
+    "status": "included",
+    "title": "Le Projet VAMOS",
+    "authors": [
+      "A. Piccialli",
+      "J. Sermeus",
+      "S. Lejoly",
+      "S. Claes",
+      "J. Stepanovic",
+      "A. Mahieux",
+      "K.Lefever",
+      "S. Fratta et A. C. Vandaele"
+    ],
+    "venue": "Science Connection n°71",
+    "date": "2024-03",
+    "notes": "",
+    "links": [
+      {
+        "label": "Article",
+        "url": "https://eo.belspo.be/sites/default/files/publications/71sci_fr_projet%20vamos.pdf"
+      }
+    ],
+    "abstract": "Combler le fossé entre les\ndonnées et la connaissance\ndans l’étude de l’atmosphère\nde Vénus"
+  },
+  {
+    "slug": "lejoly-2024-extrapolating",
+    "status": "featured",
+    "doi": "10.14428/esann/2024.es2024-142",
+    "csl": {
+      "type": "proceedings-article",
+      "title": "Extrapolating Venusian Atmospheric Profiles using MAGMA Gaussian Processes",
+      "author": [
+        "S. Lejoly",
+        "A. Piccialli",
+        "A. Mahieux",
+        "A. C. Vandaele",
+        "B. Frénay"
+      ],
+      "venue": "ESANN 2024 proceesdings",
+      "date": "2024",
+      "abstract": "",
+      "url": "http://dx.doi.org/10.14428/esann/2024.es2024-142"
+    },
+    "notes": "",
+    "links": [],
+    "abstract": "In the field of spatial aeronomy, atmospheric profile datasets often contain partial data. Probabilistic models, particularly Gaussian processes (GPs), offer promising solutions for filling these data gaps. However, traditional GP algorithms encounter challenges when handling multiple sequences simultaneously, both in terms of performance and computational complexity. Recently, an algorithm named MAGMA was introduced to address these issues. This paper evaluates MAGMA’s performance using the SOIR Venus atmosphere dataset, marking the first application of MAGMA to atmospheric profiles. Results indicate that MAGMA represents a significant advancement towards the efficient application of GPs for extrapolating atmospheric profiles."
+  },
+  {
+    "slug": "gunessee-2026-towards",
+    "status": "included",
+    "doi": "10.5194/epsc2026-1019",
+    "csl": {
+      "type": "posted-content",
+      "title": "Towards Probabilistic Modelling of Venus Express/SOIR’s Acousto-Optic Tunable Filter",
+      "author": [
+        "A. Gunessee",
+        "A. Mahieux",
+        "S. Robert",
+        "A. Piccialli",
+        "I. Thomas",
+        "S. Lejoly",
+        "V. Delchevalerie",
+        "A. C. Vandaele",
+        "B. Frénay"
+      ],
+      "venue": "Copernicus GmbH",
+      "date": "2026-07",
+      "abstract": "The SOIR (Solar Occultation in InfraRed) spectrometer onboard Venus Express (VEx) collected high-resolution solar occultation spectra of the Venusian atmosphere from 2006 to 2014. SOIR combines an echelle grating with an Acousto-Optic Tunable Filter (AOTF), the latter enabling the rapid selection of diffraction orders across the 2.2 to 4.3 microns spectral range [1]. Accurate characterisation of the AOTF transfer function (TF) is essential as the TF directly impacts the spectral calibration and the accuracy of the atmospheric retrievals. The SOIR AOTF TF was characterised in-flight using dedicated calibration observations of the Sun, called miniscans, during which the AOTF driving radio frequency was stepped across defined frequency intervals centred on deep solar Fraunhofer lines. Because these solar lines are significantly narrower than the AOTF bandwidth, they provide an effective probe of the instrument response function. Early calibration work used 42 miniscans and approximately 250 solar lines distributed across the spectral range to derive the AOTF’s tuning relation and bandpass [2]. A subsequent study introduced a more advanced reconstruction approach based on the combined analysis of multiple solar lines and demonstrated that the SOIR AOTF TF could be approximated using a sum of five sinc2 functions with frequency-dependent coefficients [3]. A later investigation extended the calibration analysis to nearly 300 miniscans available at the time [4]. By the end of the mission in 2014, however, the complete SOIR archive contained nearly 500 miniscans. Although the analytical multi-sinc2 model reproduces the main lobe structure of the AOTF TF, discrepancies remain, particularly in the sidelobes and in spectral regions affected by order overlap. In addition, the partial exploitation of the complete SOIR miniscan archive leaves open questions regarding the variability of the TF across the spectral domain, its long-term evolution throughout the mission lifetime, and potential instrumental dependencies not yet detectable in previous analyses. This work introduces a probabilistic machine learning framework for the SOIR AOTF TF characterisation, with a particular focus on Gaussian Processes (GPs). GPs provide a flexible non-parametric framework well suited to heterogeneous, medium-sized calibration datasets, while naturally incorporating uncertainty estimation. The GP covariance structure can be physically informed, while the existing analytical model may be incorporated as a prior mean function, ensuring the framework remains grounded in instrument physics [5]. The objective is to investigate whether GP-based modelling can improve reconstruction of the TF shape, especially in the sidelobe regions, while also enabling the exploration of dependencies on wavelength, instrumental temperature, and observation epoch. The ongoing study aims to extend the analysis to the complete SOIR miniscan archive acquired over the full operational lifetime of the instrument. Preliminary developments of the GP framework and data preparation pipeline are underway. Initial results from the first application of GP-based AOTF TF modelling to SOIR calibration data will be presented. [1] Nevejans, D., Neefs, E., van Ransbeeck, E., Berkenbosch, S., Clairquin, R., de Vos, L., Moelans, W., Glorieux, S., Baeke, A., Korablev, O., Vinogradov, I., Kalinnikov, Y., Bach, B., Dubois, J-P., and Villard, E., “Compact high-resolution spaceborne echelle grating spectrometer with acousto-optical tunable filter based order sorting for the infrared domain from 2.2 to 4.3 μm”, Applied Optics, vol. 45, no. 21, pp. 5191-5206, 2006.[2] Mahieux, A., Berkenbosch, S., Clairquin, R., Fussen, D., Mateshvili, N., Neefs, E., Nevejans, D., Ristic, B., Vandaele, A. C., Wilquet, V., Belyaev, D., Fedorova, A., Korablev, O., Villard, E., Montmessin, F., and Bertaux, J-L., “In-flight performance and calibration of SPICAV SOIR onboard Venus Express”, Applied Optics, vol. 47, no. 13, pp. 2252-2265, 2008.[3] Mahieux, A., Wilquet, V., Drummond, R., Belyaev, D., Federova, A., and Vandaele, A. C., “A new method for determining the transfer function of an Acousto optical tunable filter”, Optics Express, vol. 17, no. 3, p. 2005, 2009.[4] Mahieux, A., “Inversion of infrared spectra recorded by the SOIR instrument on board Venus Express”, PhD Thesis, BIRA-IASB & ULB, Belgium, 2011.[5] Rasmussen, C. E. and Williams, C. K. I., Gaussian Processes for Machine Learning, MIT Press, 2006.",
+      "url": "http://dx.doi.org/10.5194/epsc2026-1019"
+    },
+    "notes": "",
+    "links": []
+  }
+]

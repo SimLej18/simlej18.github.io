@@ -13,6 +13,7 @@
     import Contact from "../Sections/Contact.svelte";
 
     import {onMount, type Component} from "svelte";
+    import type {Snapshot} from "./$types";
 
     // Section order and labels live here, so a FR/EN switch only has to swap this table.
     const sections: { id: string; label: string; component: Component<{ index: number }> }[] = [
@@ -100,6 +101,16 @@
             scrollContainer.removeEventListener('touchstart', stopScrollAnimation);
         };
     });
+
+    // The page scrolls inside scrollContainer, which SvelteKit's scroll restoration does not see:
+    // coming back to the page (history back, reload) returns to the section that was showing
+    export const snapshot: Snapshot<number> = {
+        capture: () => activeIndex,
+        restore: index => {
+            scrollContainer.scrollTop = index * scrollContainer.clientHeight;
+            update();
+        },
+    };
 
     // Section jumps are animated by hand: native smooth scrolling is too fast, has no easing
     // control and is janky on Chrome.

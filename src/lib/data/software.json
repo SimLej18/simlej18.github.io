@@ -1,0 +1,232 @@
+[
+  {
+    "repo": "UNamurCSFaculty/mimosa-ml",
+    "status": "featured",
+    "github": {
+      "url": "https://github.com/UNamurCSFaculty/mimosa-ml",
+      "description": "MIMOSA: a fully-featured multi-task Gaussian process framework for analysing functional data.",
+      "language": "Python",
+      "topics": [
+        "bayesian-inference",
+        "equinox",
+        "gaussian-processes",
+        "jax",
+        "machine-learning",
+        "timeseries-forecasting"
+      ],
+      "stars": 19,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "UNamurCSFaculty/kernax-ml",
+    "status": "featured",
+    "github": {
+      "url": "https://github.com/UNamurCSFaculty/kernax-ml",
+      "description": "Kernax: a Python package providing efficient mathematical kernel implementations for probabilistic machine learning models, built with JAX.",
+      "language": "Python",
+      "topics": [
+        "equinox",
+        "gaussian-processes",
+        "jax",
+        "kernel-methods",
+        "machine-learning"
+      ],
+      "stars": 9,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/manim-presentations",
+    "status": "featured",
+    "github": {
+      "url": "https://github.com/SimLej18/manim-presentations",
+      "description": "A Python framework for creating composable manim-slides presentations.",
+      "language": "Python",
+      "topics": [
+        "manim",
+        "manim-slides"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/eqxbatch",
+    "status": "featured",
+    "github": {
+      "url": "https://github.com/SimLej18/eqxbatch",
+      "description": "Batched evaluation of Equinox modules: a vmap that lives in the PyTree.",
+      "language": "Python",
+      "topics": [
+        "equinox",
+        "jax"
+      ],
+      "stars": 0,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/KiloGuide",
+    "status": "featured",
+    "github": {
+      "url": "https://github.com/SimLej18/KiloGuide",
+      "description": "A minimal, get-started guide for kilobots, with various tutorials.",
+      "language": "C",
+      "topics": [
+        "kilobots",
+        "robotics"
+      ],
+      "stars": 2,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/B2NH",
+    "status": "included",
+    "github": {
+      "url": "https://github.com/SimLej18/B2NH",
+      "description": "Back To Natural Hasards repository",
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 2,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/KernelArena",
+    "status": "included",
+    "github": {
+      "url": "https://github.com/SimLej18/KernelArena",
+      "description": "Benchmarks comparing Gaussian Process kernel implementations across 6 Python libraries — Kernax, scikit-learn, GPyTorch, GPJax, GPFlow, and GPy — on Squared Exponential and Matérn 5/2 kernels.",
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/EPSC24_VAMOS_talk",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/EPSC24_VAMOS_talk",
+      "description": "A talk I gave at EPSC 2024",
+      "language": "HTML",
+      "topics": [],
+      "stars": 0,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/GitHubDemo",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/GitHubDemo",
+      "description": null,
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "fork": false,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/kernax-ml",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/kernax-ml",
+      "description": null,
+      "language": "Python",
+      "topics": [],
+      "stars": 0,
+      "fork": false,
+      "archived": true
+    }
+  },
+  {
+    "repo": "SimLej18/MagmaClustPy",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/MagmaClustPy",
+      "description": "A Python translation of the MagmaClustR R package",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 2,
+      "fork": false,
+      "archived": true
+    }
+  },
+  {
+    "repo": "SimLej18/MagmaPipelines",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/MagmaPipelines",
+      "description": "Examples of how to use the MagmaClustPy package",
+      "language": "Jupyter Notebook",
+      "topics": [],
+      "stars": 0,
+      "fork": false,
+      "archived": true
+    }
+  },
+  {
+    "repo": "SimLej18/mimosa-ml",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/mimosa-ml",
+      "description": "MIMOSA: Multi-Input Multi-Output Sample Analysis  -  A fully-featured multi-task Gaussian process framework for analysing functional data.",
+      "language": "Python",
+      "topics": [],
+      "stars": 1,
+      "fork": false,
+      "archived": true
+    }
+  },
+  {
+    "repo": "SimLej18/mini_projet_3",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/mini_projet_3",
+      "description": "Le code source du mini-projet 3",
+      "language": "Python",
+      "topics": [],
+      "stars": 3,
+      "fork": false,
+      "archived": true
+    }
+  },
+  {
+    "repo": "SimLej18/Roberto",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/Roberto",
+      "description": null,
+      "language": null,
+      "topics": [],
+      "stars": 0,
+      "fork": true,
+      "archived": false
+    }
+  },
+  {
+    "repo": "SimLej18/TravelPlanner",
+    "status": "unlisted",
+    "github": {
+      "url": "https://github.com/SimLej18/TravelPlanner",
+      "description": null,
+      "language": "JavaScript",
+      "topics": [],
+      "stars": 5,
+      "fork": false,
+      "archived": true
+    }
+  }
+]
