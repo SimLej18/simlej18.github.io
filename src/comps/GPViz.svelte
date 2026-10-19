@@ -1,13 +1,15 @@
 <script lang="ts">
-    import { onMount, untrack } from "svelte";
+    import { untrack } from "svelte";
     import GPSample from "./GPSample.svelte";
 
-    let { nSamples, resolution, variance, width, height, points = [], vertical = false, showPoints = true }: {
+    let { nSamples, resolution, variance, width, height, points = [], vertical = false, showPoints = true, paused = false, lengthScale = 200 }: {
         nSamples: number; resolution: number; variance: number;
         width: number; height: number;
         points?: { x: number; y: number }[];  // x: px along the input axis, y: value
         vertical?: boolean;
         showPoints?: boolean;  // draw the observed points, or leave markers to the caller
+        paused?: boolean;  // freeze on the current frame, with points conditioned at once (static exports)
+        lengthScale?: number;  // px along the input axis, each sample draws within ±12.5%
     } = $props();
 
     const NOISE_INIT = 100;
@@ -22,7 +24,7 @@
         untrack(() => {
             for (const t of targets) {
                 if (!displayedPoints.some(d => d.x === t.x && d.y === t.y)) {
-                    displayedPoints.push({ x: t.x, y: t.y, noise: NOISE_INIT });
+                    displayedPoints.push({ x: t.x, y: t.y, noise: paused ? NOISE_MIN : NOISE_INIT });
                 }
             }
         });
@@ -31,7 +33,7 @@
     const sampleParams = Array.from({ length: nSamples }, () => {
         const frames = Math.round(400 + Math.random() * 100);
         return {
-            length_scale: 175 + Math.random() * 50,
+            length_scale: lengthScale * (0.875 + Math.random() * 0.25),
             frames,
             startFrame: Math.floor(Math.random() * frames),
         };
@@ -39,7 +41,11 @@
 
     let gpSamples: ({ nextFrame: () => void } | null)[] = [];
 
-    onMount(() => {
+    $effect(() => {
+        if (paused) {
+            untrack(() => displayedPoints.forEach(p => p.noise = NOISE_MIN));
+            return;
+        }
         let rafId: number;
         let last = 0;
         function tick(now: number) {
